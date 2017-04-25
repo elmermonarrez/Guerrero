@@ -27,14 +27,7 @@
 	background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);
 	background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
 	background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);
-  <div id="clouds">
-  	<div class="cloud x1"></div>
-  	<!-- Time for multiple clouds to dance around -->
-  	<div class="cloud x2"></div>
-  	<div class="cloud x3"></div>
-  	<div class="cloud x4"></div>
-  	<div class="cloud x5"></div>
-  </div>
+
   .cloud {
 	width: 200px; height: 60px;
 	background: #fff;
@@ -67,24 +60,23 @@
 	top: -55px; left: auto; right: 15px;
 }
 
-/*Time to animate*/
+
 .x1 {
 	-webkit-animation: moveclouds 15s linear infinite;
 	-moz-animation: moveclouds 15s linear infinite;
 	-o-animation: moveclouds 15s linear infinite;
 }
 
-/*variable speed, opacity, and position of clouds for realistic effect*/
+
 .x2 {
 	left: 200px;
 
 	-webkit-transform: scale(0.6);
 	-moz-transform: scale(0.6);
 	transform: scale(0.6);
-	opacity: 0.6; /*opacity proportional to the size*/
+	opacity: 0.6;
 
-	/*Speed will also be proportional to the size and opacity*/
-	/*More the speed. Less the time in 's' = seconds*/
+
 	-webkit-animation: moveclouds 25s linear infinite;
 	-moz-animation: moveclouds 25s linear infinite;
 	-o-animation: moveclouds 25s linear infinite;
@@ -96,7 +88,7 @@
 	-webkit-transform: scale(0.8);
 	-moz-transform: scale(0.8);
 	transform: scale(0.8);
-	opacity: 0.8; /*opacity proportional to the size*/
+	opacity: 0.8;
 
 	-webkit-animation: moveclouds 20s linear infinite;
 	-moz-animation: moveclouds 20s linear infinite;
@@ -109,7 +101,7 @@
 	-webkit-transform: scale(0.75);
 	-moz-transform: scale(0.75);
 	transform: scale(0.75);
-	opacity: 0.75; /*opacity proportional to the size*/
+	opacity: 0.75;
 
 	-webkit-animation: moveclouds 18s linear infinite;
 	-moz-animation: moveclouds 18s linear infinite;
@@ -122,7 +114,7 @@
 	-webkit-transform: scale(0.8);
 	-moz-transform: scale(0.8);
 	transform: scale(0.8);
-	opacity: 0.8; /*opacity proportional to the size*/
+	opacity: 0.8;
 
 	-webkit-animation: moveclouds 20s linear infinite;
 	-moz-animation: moveclouds 20s linear infinite;
@@ -141,8 +133,7 @@
 	0% {margin-left: 1000px;}
 	100% {margin-left: -1000px;}
 }
-     body {
-         background-color: lightblue;
+     
      }
 
      h1 {
